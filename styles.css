@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════
-   NIMMI FASHIONS — Design System & Global Styles
+   NEMMI FASHIONS — Design System & Global Styles
    Premium Indian Ethnic Fashion Editorial
    ═══════════════════════════════════════════════════════════════ */
 
@@ -229,6 +229,7 @@ ul, ol {
     right: 0;
     z-index: var(--z-navbar);
     padding: 1rem 0;
+    background: transparent;
     transition: all var(--duration-base) var(--ease-out);
 }
 
@@ -247,30 +248,28 @@ ul, ol {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: transparent;
 }
 
 .navbar__brand {
     display: flex;
     align-items: center;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
 }
 
-/* Official brand mark: the supplied logo, background removed, original
-   burgundy + antique-gold artwork untouched. Only the height is set, so the
-   aspect ratio is never forced — the artwork is never stretched or cropped.
-   The mark is a stacked lockup (emblem over the wordmark), so it is sized by
-   height and reads at roughly 78 × 81px on desktop. */
+/* Official brand mark: the supplied white-background logo is displayed at its
+   natural aspect ratio with no background removal, masking, or added styling.
+   Only the height is set, so the aspect ratio is preserved and the artwork is
+   not stretched or cropped. */
 .navbar__logo {
     display: block;
     height: 78px;
     width: auto;
-}
-
-/* Over the hero the video sits around mid-tone, which is close to the
-   luminance of the antique gold in the mark. One very subtle, shape-following
-   shadow keeps the wordmark and the gold detailing readable; it is dropped as
-   soon as the navbar turns solid ivory. */
-.navbar:not(.navbar--scrolled) .navbar__logo {
-    filter: drop-shadow(0 1px 3px rgba(33, 29, 26, 0.6));
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 /* Navigation links sit over the same video before the navbar turns solid, so
@@ -2402,7 +2401,7 @@ body.product-modal-open {
 }
 
 
-/* ═══════════════════════════════════════════════════════════════
+/* ═══════════════════════════════════════════════════════════════════════════════════════
    ANIMATIONS & REVEAL
    ═══════════════════════════════════════════════════════════════ */
 .fade-in-up {

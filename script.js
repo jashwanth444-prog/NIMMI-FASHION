@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════
-   NIMMI FASHIONS — Premium Interactions
+   NEMMI FASHIONS — Premium Interactions
    ═══════════════════════════════════════════════════════════════ */
 
 (function () {
@@ -551,7 +551,7 @@
             categoryEl.textContent = category;
             priceEl.textContent = detailValue(source, 'price', price || PLACEHOLDERS.price);
             bodyEl.textContent = detailValue(source, 'description', PLACEHOLDERS.description);
-            collectionEl.textContent = collection || 'NIMMI FASHIONS';
+            collectionEl.textContent = collection || 'NEMMI FASHIONS';
             fabricEl.textContent = detailValue(source, 'fabric', PLACEHOLDERS.fabric);
             colourEl.textContent = detailValue(source, 'colour', PLACEHOLDERS.colour);
             sizesEl.textContent = detailValue(source, 'sizes', PLACEHOLDERS.sizes);
