@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIMMI FASHIONS — Timeless Indian Elegance</title>
+    <meta name="description" content="NIMMI FASHIONS — Premium Indian ethnic fashion. Timeless Indian Elegance in sarees, kurtis, half sarees, and lehenga cholis.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  1. NAVBAR / HEADER                         -->
+    <!-- ═══════════════════════════════════════════ -->
+    <header class="navbar" id="navbar">
+        <div class="navbar__inner">
+            <a href="#home" class="navbar__brand">
+                <!-- Official NIMMI FASHIONS logo (transparent PNG, original burgundy + antique-gold artwork) -->
+                <img
+                    class="navbar__logo"
+                    src="logo.png"
+                    alt="NIMMI FASHIONS"
+                    width="334"
+                    height="320"
+                    decoding="async"
+                >
+            </a>
+            <nav class="navbar__nav" id="navMenu">
+                <a href="#home" class="navbar__link navbar__link--active">HOME</a>
+                <a href="#shop" class="navbar__link">SHOP</a>
+                <a href="#collections" class="navbar__link">COLLECTIONS</a>
+                <a href="#story" class="navbar__link">OUR STORY</a>
+                <a href="#contact" class="navbar__link">CONTACT</a>
+            </nav>
+            <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  2. CINEMATIC HERO                         -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="hero" id="home">
+        <div class="hero__bg">
+            <video
+                class="hero__video"
+                autoplay
+                loop
+                muted
+                playsinline
+                preload="auto"
+                poster="row%205/Lehenga%20Choli%201/ChatGPT%20Image%20Sep%2019%2C%202026%2C%2006_48_57%20PM.png"
+            >
+                <source src="Hero video/video.mp4" type="video/mp4">
+            </video>
+            <!-- Fallback gradient shown if video fails to load -->
+            <div class="hero__video-fallback" aria-hidden="true"></div>
+        </div>
+        <div class="hero__overlay"></div>
+        <!-- Cinematic scrim: deepens only the left text column and fades out
+             before the centre of the frame, so the models stay untouched -->
+        <div class="hero__scrim" aria-hidden="true"></div>
+        <div class="hero__vignette" aria-hidden="true"></div>
+        <div class="hero__content">
+            <p class="hero__label fade-in-up">NIMMI FASHIONS</p>
+            <h1 class="hero__title fade-in-up" data-delay="200">
+                <span class="hero__title-line hero__title-line--top">TIMELESS INDIAN</span>
+                <span class="hero__title-line hero__title-line--accent">ELEGANCE</span>
+            </h1>
+            <p class="hero__subtitle fade-in-up" data-delay="400">Discover timeless sarees crafted for celebrations, traditions, and every special moment.</p>
+            <div class="hero__actions fade-in-up" data-delay="600">
+                <a href="#shop" class="btn btn--primary">SHOP COLLECTION</a>
+                <a href="#collections" class="btn btn--ghost btn--ghost--light">EXPLORE COLLECTION</a>
+            </div>
+        </div>
+        <div class="hero__scroll-hint">
+            <span>SCROLL</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  3. PRODUCT COLLECTION ROWS                 -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="products" id="shop">
+        <!-- Row 1: SAREES — 5 products (1 × 3 images, 4 × 2 images) -->
+        <div class="products__row">
+            <div class="products__header reveal">
+                <p class="products__label">CURATED ELEGANCE</p>
+                <h2 class="products__title">Sarees</h2>
+                <p class="products__desc">Each saree tells a story of heritage, woven with centuries of artistry and modern sophistication.</p>
+            </div>
+            <div class="products__grid products__grid--5">
+                <article class="product-card reveal">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 1/saree 1/ChatGPT Image Sep 19, 2026, 05_36_17 PM.png" alt="Heritage Silk I — view 1" class="product-card__image" loading="lazy" decoding="async">
+                            <img src="row 1/saree 1/ChatGPT Image Sep 19, 2026, 05_36_23 PM.png" alt="Heritage Silk I — view 2" class="product-card__image" loading="lazy" decoding="async">
+                            <img src="row 1/saree 1/ChatGPT Image Sep 19, 2026, 05_36_30 PM.png" alt="Heritage Silk I — view 3" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">SAREE</p>
+                        <h3 class="product-card__name">Heritage Silk I</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="80">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 1/saree 2/ChatGPT Image Sep 19, 2026, 05_41_55 PM.png" alt="Heritage Silk II — view 1" class="product-card__image" loading="lazy" decoding="async">
+                            <img src="row 1/saree 2/ChatGPT Image Sep 19, 2026, 05_43_53 PM.png" alt="Heritage Silk II — view 2" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">SAREE</p>
+                        <h3 class="product-card__name">Heritage Silk II</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="160">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 1/saree 3/ChatGPT Image Sep 19, 2026, 05_45_55 PM.png" alt="Heritage Silk III — view 1" class="product-card__image" loading="lazy" decoding="async">
+                            <img src="row 1/saree 3/ChatGPT Image Sep 19, 2026, 05_48_25 PM.png" alt="Heritage Silk III — view 2" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">SAREE</p>
+                        <h3 class="product-card__name">Heritage Silk III</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="240">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 1/saree 4/ChatGPT Image Sep 19, 2026, 05_52_29 PM.png" alt="Heritage Silk IV — view 1" class="product-card__image" loading="lazy" decoding="async">
+                            <img src="row 1/saree 4/ChatGPT Image Sep 19, 2026, 05_54_30 PM.png" alt="Heritage Silk IV — view 2" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">SAREE</p>
+                        <h3 class="product-card__name">Heritage Silk IV</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="320">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 1/saree 5/ChatGPT Image Sep 19, 2026, 05_56_28 PM.png" alt="Heritage Silk V — view 1" class="product-card__image" loading="lazy" decoding="async">
+                            <img src="row 1/saree 5/ChatGPT Image Sep 19, 2026, 05_58_26 PM.png" alt="Heritage Silk V — view 2" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">SAREE</p>
+                        <h3 class="product-card__name">Heritage Silk V</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Row 2: SAREES — 6 products (1 image each) -->
+        <div class="products__row products__row--alt">
+            <div class="products__header reveal">
+                <p class="products__label">SIGNATURE PIECES</p>
+                <h2 class="products__title">Sarees</h2>
+                <p class="products__desc">Exquisite drapes that embody the grandeur of Indian textile artistry.</p>
+            </div>
+            <div class="products__grid products__grid--6">
+                <article class="product-card reveal">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 2/saree 1/ChatGPT Image Sep 19, 2026, 06_02_27 PM.png" alt="Royal Drape I" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">SAREE</p>
+                        <h3 class="product-card__name">Royal Drape I</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="80">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 2/saree 2/ChatGPT Image Sep 19, 2026, 06_03_44 PM.png" alt="Royal Drape II" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">SAREE</p>
+                        <h3 class="product-card__name">Royal Drape II</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="160">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 2/saree 3/ChatGPT Image Sep 19, 2026, 06_05_12 PM.png" alt="Royal Drape III" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">SAREE</p>
+                        <h3 class="product-card__name">Royal Drape III</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="240">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 2/saree 4/ChatGPT Image Sep 19, 2026, 06_07_43 PM.png" alt="Royal Drape IV" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">SAREE</p>
+                        <h3 class="product-card__name">Royal Drape IV</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="320">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 2/saree 5/ChatGPT Image Sep 19, 2026, 06_09_12 PM.png" alt="Royal Drape V" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">SAREE</p>
+                        <h3 class="product-card__name">Royal Drape V</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="400">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 2/saree 6/ChatGPT Image Sep 19, 2026, 06_10_55 PM.png" alt="Royal Drape VI" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">SAREE</p>
+                        <h3 class="product-card__name">Royal Drape VI</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Row 3: KURTI — 5 products (2 images each) -->
+        <div class="products__row">
+            <div class="products__header reveal">
+                <p class="products__label">CONTEMPORARY CHARM</p>
+                <h2 class="products__title">Kurti</h2>
+                <p class="products__desc">Where tradition meets contemporary style — elegant kurtis for every occasion.</p>
+            </div>
+            <div class="products__grid products__grid--5">
+                <article class="product-card reveal">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 3/Kurti 1/ChatGPT Image Sep 19, 2026, 06_14_03 PM.png" alt="Silk Ensemble I — view 1" class="product-card__image" loading="lazy" decoding="async">
+                            <img src="row 3/Kurti 1/ChatGPT Image Sep 19, 2026, 06_15_07 PM.png" alt="Silk Ensemble I — view 2" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">KURTI</p>
+                        <h3 class="product-card__name">Silk Ensemble I</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="80">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 3/Kurti 2/ChatGPT Image Sep 19, 2026, 06_17_04 PM.png" alt="Silk Ensemble II — view 1" class="product-card__image" loading="lazy" decoding="async">
+                            <img src="row 3/Kurti 2/ChatGPT Image Sep 19, 2026, 06_17_59 PM.png" alt="Silk Ensemble II — view 2" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">KURTI</p>
+                        <h3 class="product-card__name">Silk Ensemble II</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="160">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 3/Kurti 3/ChatGPT Image Sep 19, 2026, 06_19_28 PM.png" alt="Silk Ensemble III — view 1" class="product-card__image" loading="lazy" decoding="async">
+                            <img src="row 3/Kurti 3/ChatGPT Image Sep 19, 2026, 06_21_43 PM.png" alt="Silk Ensemble III — view 2" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">KURTI</p>
+                        <h3 class="product-card__name">Silk Ensemble III</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="240">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 3/Kurti 4/ChatGPT Image Sep 19, 2026, 06_22_57 PM.png" alt="Silk Ensemble IV — view 1" class="product-card__image" loading="lazy" decoding="async">
+                            <img src="row 3/Kurti 4/ChatGPT Image Sep 19, 2026, 06_23_57 PM.png" alt="Silk Ensemble IV — view 2" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">KURTI</p>
+                        <h3 class="product-card__name">Silk Ensemble IV</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="320">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 3/Kurti 5/ChatGPT Image Sep 19, 2026, 06_25_37 PM.png" alt="Silk Ensemble V — view 1" class="product-card__image" loading="lazy" decoding="async">
+                            <img src="row 3/Kurti 5/ChatGPT Image Sep 19, 2026, 06_27_58 PM.png" alt="Silk Ensemble V — view 2" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">KURTI</p>
+                        <h3 class="product-card__name">Silk Ensemble V</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Row 4: HALF SAREES — 5 products (1 image each) -->
+        <div class="products__row products__row--alt">
+            <div class="products__header reveal">
+                <p class="products__label">GRACE &amp; POISE</p>
+                <h2 class="products__title">Half Sarees</h2>
+                <p class="products__desc">Celebrate the beauty of South Indian tradition with our stunning half saree designs.</p>
+            </div>
+            <div class="products__grid products__grid--5">
+                <article class="product-card reveal">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 4/Half Sarees 1/ChatGPT Image Sep 19, 2026, 06_35_09 PM.png" alt="Langa Voni I" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">HALF SAREE</p>
+                        <h3 class="product-card__name">Langa Voni I</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="80">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 4/Half Sarees 2/ChatGPT Image Sep 19, 2026, 06_37_31 PM.png" alt="Langa Voni II" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">HALF SAREE</p>
+                        <h3 class="product-card__name">Langa Voni II</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="160">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 4/Half Sarees 3/ChatGPT Image Sep 19, 2026, 06_39_12 PM.png" alt="Langa Voni III" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">HALF SAREE</p>
+                        <h3 class="product-card__name">Langa Voni III</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="240">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 4/Half Sarees 4/ChatGPT Image Sep 19, 2026, 06_40_22 PM.png" alt="Langa Voni IV" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">HALF SAREE</p>
+                        <h3 class="product-card__name">Langa Voni IV</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="320">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 4/Half Sarees 5/ChatGPT Image Sep 19, 2026, 06_41_36 PM.png" alt="Langa Voni V" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">HALF SAREE</p>
+                        <h3 class="product-card__name">Langa Voni V</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Row 5: LEHENGA CHOLI — 5 products (2 images each, fixed) -->
+        <div class="products__row">
+            <div class="products__header reveal">
+                <p class="products__label">BRIDAL COUTURE</p>
+                <h2 class="products__title">Lehenga Choli</h2>
+                <p class="products__desc">Opulent lehenga cholis designed for weddings, festivals, and celebrations of life.</p>
+            </div>
+            <div class="products__grid products__grid--5">
+                <article class="product-card reveal">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 5/Lehenga Choli 1/ChatGPT Image Sep 19, 2026, 06_48_06 PM.png" alt="Bridal Splendour I — view 1" class="product-card__image" loading="lazy" decoding="async">
+                            <img src="row 5/Lehenga Choli 1/ChatGPT Image Sep 19, 2026, 06_48_57 PM.png" alt="Bridal Splendour I — view 2" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">LEHENGA CHOLI</p>
+                        <h3 class="product-card__name">Bridal Splendour I</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="80">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 5/Lehenga Choli 2/ChatGPT Image Sep 19, 2026, 06_50_25 PM.png" alt="Bridal Splendour II — view 1" class="product-card__image" loading="lazy" decoding="async">
+                            <img src="row 5/Lehenga Choli 2/ChatGPT Image Sep 19, 2026, 06_51_23 PM.png" alt="Bridal Splendour II — view 2" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">LEHENGA CHOLI</p>
+                        <h3 class="product-card__name">Bridal Splendour II</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="160">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 5/Lehenga Choli 3/image 1.png" alt="Bridal Splendour III — view 1" class="product-card__image" loading="lazy" decoding="async">
+                            <img src="row 5/Lehenga Choli 3/image 2.png" alt="Bridal Splendour III — view 2" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">LEHENGA CHOLI</p>
+                        <h3 class="product-card__name">Bridal Splendour III</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="240">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 5/Lehenga Choli 4/ChatGPT Image Sep 19, 2026, 06_55_11 PM.png" alt="Bridal Splendour IV — view 1" class="product-card__image" loading="lazy" decoding="async">
+                            <img src="row 5/Lehenga Choli 4/ChatGPT Image Sep 19, 2026, 06_56_01 PM.png" alt="Bridal Splendour IV — view 2" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">LEHENGA CHOLI</p>
+                        <h3 class="product-card__name">Bridal Splendour IV</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card reveal" data-delay="320">
+                    <div class="product-card__image-wrap">
+                        <div class="gallery" data-gallery>
+                            <img src="row 5/Lehenga Choli 5/ChatGPT Image Sep 20, 2026, 11_05_03 AM.png" alt="Bridal Splendour V — view 1" class="product-card__image" loading="lazy" decoding="async">
+                            <img src="row 5/Lehenga Choli 5/ChatGPT Image Sep 20, 2026, 11_05_10 AM.png" alt="Bridal Splendour V — view 2" class="product-card__image" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="product-card__info">
+                        <p class="product-card__category">LEHENGA CHOLI</p>
+                        <h3 class="product-card__name">Bridal Splendour V</h3>
+                        <p class="product-card__price">Price on request</p>
+                        <div class="product-card__action">
+                            <button type="button" class="product-card__btn" data-details>
+                                <span>View Details</span>
+                                <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  3b. PRODUCT DETAILS MODAL                  -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div class="product-modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="productModalTitle" aria-hidden="true">
+        <div class="product-modal__backdrop" data-modal-close></div>
+        <div class="product-modal__panel">
+            <button type="button" class="product-modal__close" data-modal-close aria-label="Close details">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+            </button>
+            <div class="product-modal__media">
+                <div class="product-modal__stage">
+                    <div class="gallery" id="productModalGallery" data-gallery data-manual></div>
+                    <button type="button" class="product-modal__nav product-modal__nav--prev" data-modal-prev aria-label="Previous image">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 6 9 12 15 18"/></svg>
+                    </button>
+                    <button type="button" class="product-modal__nav product-modal__nav--next" data-modal-next aria-label="Next image">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
+                    </button>
+                </div>
+                <div class="product-modal__thumbs" id="productModalThumbs"></div>
+            </div>
+            <!-- Real product data is not available yet, so every value below is an
+                 honest placeholder. When details are supplied, they can be filled in
+                 either directly here or per product with optional data attributes on
+                 the card (data-price, data-description, data-fabric, data-colour,
+                 data-sizes, data-care) — the panel prefers those when present. -->
+            <div class="product-modal__info" id="productModalInfo" role="region" aria-label="Product details" tabindex="0">
+                <p class="product-modal__category" id="productModalCategory"></p>
+                <h2 class="product-modal__title" id="productModalTitle"></h2>
+                <div class="product-modal__rule" aria-hidden="true"></div>
+                <p class="product-modal__price" id="productModalPrice">Price on request</p>
+                <p class="product-modal__body" id="productModalBody">Product details coming soon.</p>
+
+                <dl class="product-modal__specs">
+                    <div class="product-modal__spec">
+                        <dt>Collection</dt>
+                        <dd id="productModalCollection"></dd>
+                    </div>
+                    <div class="product-modal__spec">
+                        <dt>Fabric / Material</dt>
+                        <dd id="productModalFabric">Fabric details coming soon</dd>
+                    </div>
+                    <div class="product-modal__spec">
+                        <dt>Colour</dt>
+                        <dd id="productModalColour">Colour details coming soon</dd>
+                    </div>
+                    <div class="product-modal__spec">
+                        <dt>Available Sizes</dt>
+                        <dd id="productModalSizes">Size details coming soon</dd>
+                    </div>
+                    <div class="product-modal__spec">
+                        <dt>Care</dt>
+                        <dd id="productModalCare">Care instructions coming soon</dd>
+                    </div>
+                </dl>
+
+                <p class="product-modal__note">Fabric, size and care details for this piece are still being finalised. Visit the boutique or call us and we will gladly talk you through it in person.</p>
+
+                <div class="product-modal__actions">
+                    <a href="#contact" class="btn btn--primary product-modal__cta" data-modal-close>ENQUIRE ABOUT THIS PIECE</a>
+                    <a href="tel:7569939707" class="product-modal__call">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span>Call 7569939707</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  4. BRAND STORY                             -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="story" id="story">
+        <div class="story__inner">
+            <figure class="story__media reveal">
+                <div class="story__image-wrap">
+                    <img src="row 5/Lehenga Choli 1/ChatGPT Image Sep 19, 2026, 06_48_06 PM.png" alt="NIMMI FASHIONS — Indian craftsmanship and timeless elegance" class="story__image" loading="lazy" decoding="async">
+                </div>
+            </figure>
+            <div class="story__text">
+                <p class="products__label reveal">OUR STORY</p>
+                <h2 class="story__title reveal" data-delay="120">THE ART OF<br><em>INDIAN ELEGANCE</em></h2>
+                <div class="story__divider reveal" data-delay="200"></div>
+                <p class="story__body reveal" data-delay="280">
+                    NIMMI FASHIONS brings together timeless Indian craftsmanship and contemporary elegance through carefully curated sarees designed for every meaningful occasion. From rich traditional weaves to refined modern styles, each piece celebrates the beauty, detail, and character of Indian fashion.
+                </p>
+                <ul class="story__highlights">
+                    <li class="story__highlight reveal" data-delay="360">
+                        <span class="story__highlight-number">01</span>
+                        <span class="story__highlight-title">TIMELESS CRAFTSMANSHIP</span>
+                    </li>
+                    <li class="story__highlight reveal" data-delay="440">
+                        <span class="story__highlight-number">02</span>
+                        <span class="story__highlight-title">REFINED ELEGANCE</span>
+                    </li>
+                    <li class="story__highlight reveal" data-delay="520">
+                        <span class="story__highlight-number">03</span>
+                        <span class="story__highlight-title">AUTHENTIC STYLE</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  4b. EDITORIAL COLLECTION — CAMPAIGN FILMS  -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="editorial" id="editorial">
+        <div class="editorial__inner">
+            <div class="editorial__header reveal">
+                <p class="products__label">EDITORIAL COLLECTION</p>
+                <h2 class="editorial__title">THE ART OF<br><em>INDIAN ELEGANCE</em></h2>
+                <p class="editorial__desc">Celebrating Indian fashion through movement, detail, and timeless style.</p>
+            </div>
+
+            <!-- One campaign, three films. Nothing here is on a timer: a film takes
+                 the centre once the film before it reaches its own end. -->
+            <div class="editorial__carousel reveal" data-carousel>
+                <div class="editorial__stage" data-carousel-stage tabindex="0" role="group"
+                     aria-roledescription="carousel" aria-label="Editorial campaign — three films">
+                    <article class="editorial__film" data-carousel-slide data-pos="left"
+                             aria-roledescription="slide" aria-label="Campaign film 1 of 3">
+                        <video class="editorial__video" data-carousel-video muted playsinline preload="metadata"
+                               poster="Editorial Videos/posters/film-1.jpg"
+                               aria-label="Editorial campaign film one">
+                            <source src="Editorial Videos/video 1.mp4" type="video/mp4">
+                        </video>
+                    </article>
+                    <article class="editorial__film" data-carousel-slide data-pos="center"
+                             aria-roledescription="slide" aria-label="Campaign film 2 of 3">
+                        <video class="editorial__video" data-carousel-video muted playsinline preload="metadata"
+                               poster="Editorial Videos/posters/film-2.jpg"
+                               aria-label="Editorial campaign film two">
+                            <source src="Editorial Videos/video 2.mp4" type="video/mp4">
+                        </video>
+                    </article>
+                    <article class="editorial__film" data-carousel-slide data-pos="right"
+                             aria-roledescription="slide" aria-label="Campaign film 3 of 3">
+                        <video class="editorial__video" data-carousel-video muted playsinline preload="metadata"
+                               poster="Editorial Videos/posters/film-3.jpg"
+                               aria-label="Editorial campaign film three">
+                            <source src="Editorial Videos/video 3.mp4" type="video/mp4">
+                        </video>
+                    </article>
+                </div>
+
+                <div class="editorial__controls">
+                    <button type="button" class="editorial__nav" data-carousel-prev aria-label="Previous campaign film">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 6 9 12 15 18"/></svg>
+                    </button>
+                    <p class="editorial__count"><span data-carousel-current>01</span><span class="editorial__count-sep">—</span><span>03</span></p>
+                    <button type="button" class="editorial__nav" data-carousel-next aria-label="Next campaign film">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
+                    </button>
+                </div>
+
+                <a href="#editorial-products" class="editorial__watch">
+                    <span>WATCH THE COLLECTION</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- The two dresses worn in the campaign — one product each, three views each -->
+        <div class="editorial__showcase" id="editorial-products">
+            <div class="editorial__showcase-header reveal">
+                <p class="products__label">FROM THE CAMPAIGN</p>
+                <h3 class="editorial__showcase-title">The Campaign Dresses</h3>
+            </div>
+            <div class="editorial__grid">
+                <article class="editorial-card reveal" data-editorial-item data-editorial-collection="Editorial Collection">
+                    <div class="editorial-card__media">
+                        <div class="gallery" data-gallery>
+                            <img src="Editorial Products/Dress 1/image 1.png" alt="Editorial Dress I — campaign view 1" data-editorial-image loading="lazy" decoding="async">
+                            <img src="Editorial Products/Dress 1/image 2.png" alt="Editorial Dress I — campaign view 2" data-editorial-image loading="lazy" decoding="async">
+                            <img src="Editorial Products/Dress 1/image 3.png" alt="Editorial Dress I — campaign view 3" data-editorial-image loading="lazy" decoding="async">
+                        </div>
+                        <button type="button" class="editorial-card__nav editorial-card__nav--prev" data-editorial-prev aria-label="Previous image of Editorial Dress I">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 6 9 12 15 18"/></svg>
+                        </button>
+                        <button type="button" class="editorial-card__nav editorial-card__nav--next" data-editorial-next aria-label="Next image of Editorial Dress I">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
+                        </button>
+                    </div>
+                    <div class="editorial-card__info">
+                        <p class="editorial-card__category">EDITORIAL</p>
+                        <h4 class="editorial-card__name">Editorial Dress I</h4>
+                        <p class="editorial-card__price">Price on request</p>
+                        <button type="button" class="product-card__btn" data-details>
+                            <span>View Details</span>
+                            <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </button>
+                    </div>
+                </article>
+                <article class="editorial-card reveal" data-delay="200" data-editorial-item data-editorial-collection="Editorial Collection">
+                    <div class="editorial-card__media">
+                        <div class="gallery" data-gallery>
+                            <img src="Editorial Products/Dress 2/image 1.png" alt="Editorial Dress II — campaign view 1" data-editorial-image loading="lazy" decoding="async">
+                            <img src="Editorial Products/Dress 2/image 2.png" alt="Editorial Dress II — campaign view 2" data-editorial-image loading="lazy" decoding="async">
+                            <img src="Editorial Products/Dress 2/image 3.png" alt="Editorial Dress II — campaign view 3" data-editorial-image loading="lazy" decoding="async">
+                        </div>
+                        <button type="button" class="editorial-card__nav editorial-card__nav--prev" data-editorial-prev aria-label="Previous image of Editorial Dress II">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 6 9 12 15 18"/></svg>
+                        </button>
+                        <button type="button" class="editorial-card__nav editorial-card__nav--next" data-editorial-next aria-label="Next image of Editorial Dress II">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
+                        </button>
+                    </div>
+                    <div class="editorial-card__info">
+                        <p class="editorial-card__category">EDITORIAL</p>
+                        <h4 class="editorial-card__name">Editorial Dress II</h4>
+                        <p class="editorial-card__price">Price on request</p>
+                        <button type="button" class="product-card__btn" data-details>
+                            <span>View Details</span>
+                            <svg class="product-card__btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  5. FEATURED COLLECTION                     -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="featured" id="collections">
+        <div class="featured__inner">
+            <div class="featured__header reveal">
+                <p class="products__label">FEATURED</p>
+                <h2 class="featured__title">The New Edit</h2>
+                <p class="featured__desc">Celebrating the beauty of Indian tradition.</p>
+                <a href="#shop" class="btn btn--primary featured__cta">DISCOVER COLLECTION</a>
+            </div>
+            <div class="featured__grid">
+                <article class="featured__card featured__card--large reveal" data-featured-item data-featured-collection="Lehenga Choli">
+                    <div class="featured__card-image-wrap">
+                        <img src="row 5/Lehenga Choli 5/ChatGPT Image Sep 20, 2026, 11_05_03 AM.png" alt="The New Edit — Bridal Splendour V lehenga choli" class="featured__card-image" data-featured-image loading="lazy" decoding="async">
+                    </div>
+                    <div class="featured__card-overlay">
+                        <p class="featured__card-category">LEHENGA CHOLI</p>
+                        <h3 class="featured__card-title">Bridal Splendour V</h3>
+                        <button type="button" class="featured__card-btn" data-details>
+                            <span>View Details</span>
+                            <svg class="featured__card-btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </button>
+                    </div>
+                </article>
+                <article class="featured__card reveal" data-delay="200" data-featured-item data-featured-collection="Sarees">
+                    <div class="featured__card-image-wrap">
+                        <img src="row 1/saree 4/ChatGPT Image Sep 19, 2026, 05_52_29 PM.png" alt="The New Edit — Heritage Silk IV saree" class="featured__card-image" data-featured-image loading="lazy" decoding="async">
+                    </div>
+                    <div class="featured__card-overlay">
+                        <p class="featured__card-category">SAREE</p>
+                        <h3 class="featured__card-title">Heritage Silk IV</h3>
+                        <button type="button" class="featured__card-btn" data-details>
+                            <span>View Details</span>
+                            <svg class="featured__card-btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </button>
+                    </div>
+                </article>
+                <article class="featured__card reveal" data-delay="360" data-featured-item data-featured-collection="Kurti">
+                    <div class="featured__card-image-wrap">
+                        <img src="row 3/Kurti 2/ChatGPT Image Sep 19, 2026, 06_17_04 PM.png" alt="The New Edit — Silk Ensemble II kurti" class="featured__card-image" data-featured-image loading="lazy" decoding="async">
+                    </div>
+                    <div class="featured__card-overlay">
+                        <p class="featured__card-category">KURTI</p>
+                        <h3 class="featured__card-title">Silk Ensemble II</h3>
+                        <button type="button" class="featured__card-btn" data-details>
+                            <span>View Details</span>
+                            <svg class="featured__card-btn-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  6. CUSTOMER REVIEWS                        -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="reviews">
+        <div class="reviews__inner">
+            <div class="reviews__header reveal">
+                <p class="products__label">CUSTOMER STORIES</p>
+                <h2 class="reviews__title">What Our Customers Say</h2>
+                <p class="reviews__desc">A few words from women who love timeless Indian style.</p>
+                <p class="reviews__note">Sample reviews — shown as illustrative examples</p>
+            </div>
+            <ul class="reviews__grid">
+                <li class="reviews__item reveal">
+                    <article class="review-card">
+                        <div class="review-card__top">
+                            <span class="review-card__quote" aria-hidden="true">&ldquo;</span>
+                            <span class="review-card__label">SAMPLE REVIEW</span>
+                        </div>
+                        <p class="review-card__text">&ldquo;Saree quality chala bagundi, fabric kuda very comfortable ga undi. Function ki perfect ga set ayyindi.&rdquo;</p>
+                        <footer class="review-card__author">
+                            <p class="review-card__name">Sneha</p>
+                            <p class="review-card__location">Vemulawada</p>
+                        </footer>
+                    </article>
+                </li>
+                <li class="reviews__item reveal" data-delay="100">
+                    <article class="review-card">
+                        <div class="review-card__top">
+                            <span class="review-card__quote" aria-hidden="true">&ldquo;</span>
+                            <span class="review-card__label">SAMPLE REVIEW</span>
+                        </div>
+                        <p class="review-card__text">&ldquo;Design chala elegant ga undi. Nenu expect chesina danikante beautiful ga undi.&rdquo;</p>
+                        <footer class="review-card__author">
+                            <p class="review-card__name">Divya</p>
+                            <p class="review-card__location">Karimnagar</p>
+                        </footer>
+                    </article>
+                </li>
+                <li class="reviews__item reveal" data-delay="200">
+                    <article class="review-card">
+                        <div class="review-card__top">
+                            <span class="review-card__quote" aria-hidden="true">&ldquo;</span>
+                            <span class="review-card__label">SAMPLE REVIEW</span>
+                        </div>
+                        <p class="review-card__text">&ldquo;Half saree finish and colour combination chala bagunnayi. Traditional look vachindi.&rdquo;</p>
+                        <footer class="review-card__author">
+                            <p class="review-card__name">Harini</p>
+                            <p class="review-card__location">Sircilla</p>
+                        </footer>
+                    </article>
+                </li>
+                <li class="reviews__item reveal" data-delay="300">
+                    <article class="review-card">
+                        <div class="review-card__top">
+                            <span class="review-card__quote" aria-hidden="true">&ldquo;</span>
+                            <span class="review-card__label">SAMPLE REVIEW</span>
+                        </div>
+                        <p class="review-card__text">&ldquo;Lehenga quality and detailing really nice ga unnayi. Special occasion ki perfect choice.&rdquo;</p>
+                        <footer class="review-card__author">
+                            <p class="review-card__name">Keerthi</p>
+                            <p class="review-card__location">Warangal</p>
+                        </footer>
+                    </article>
+                </li>
+                <li class="reviews__item reveal" data-delay="400">
+                    <article class="review-card">
+                        <div class="review-card__top">
+                            <span class="review-card__quote" aria-hidden="true">&ldquo;</span>
+                            <span class="review-card__label">SAMPLE REVIEW</span>
+                        </div>
+                        <p class="review-card__text">&ldquo;Kurti material comfortable ga undi and fitting kuda chala neat ga undi.&rdquo;</p>
+                        <footer class="review-card__author">
+                            <p class="review-card__name">Meghana</p>
+                            <p class="review-card__location">Telangana</p>
+                        </footer>
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  7. FINAL CTA                               -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="cta">
+        <div class="cta__glow" aria-hidden="true"></div>
+        <div class="cta__inner">
+            <p class="products__label reveal">BEGIN YOUR JOURNEY</p>
+            <h2 class="cta__title reveal" data-delay="120">DISCOVER YOUR<br><em>PERFECT SAREE</em></h2>
+            <p class="cta__desc reveal" data-delay="240">Timeless styles for every special occasion.</p>
+            <div class="cta__actions reveal" data-delay="360">
+                <a href="#shop" class="btn btn--ivory">EXPLORE SAREES</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  8. CONTACT                                 -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="contact" id="contact">
+        <div class="contact__inner">
+            <div class="contact__info">
+                <p class="products__label reveal">GET IN TOUCH</p>
+                <h2 class="contact__title reveal" data-delay="120">NIMMI FASHIONS</h2>
+                <p class="contact__desc reveal" data-delay="200">Visit NIMMI FASHIONS and discover timeless Indian styles curated for every special occasion.</p>
+                <div class="contact__details">
+                    <div class="contact__detail reveal" data-delay="280">
+                        <p class="contact__detail-label">PHONE / WHATSAPP</p>
+                        <p class="contact__detail-value">
+                            <a href="tel:7569939707" class="contact__phone-link">7569939707</a>
+                        </p>
+                        <p class="contact__detail-note">Call or message us during boutique hours.</p>
+                    </div>
+                    <div class="contact__detail reveal" data-delay="360">
+                        <p class="contact__detail-label">OPENING HOURS</p>
+                        <p class="contact__detail-value">Every day<br>9:00 AM – 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__panel">
+                <div class="contact__address reveal" data-delay="180">
+                    <p class="contact__detail-label">STORE ADDRESS</p>
+                    <p class="contact__address-value">NIMMI FASHIONS</p>
+                    <address class="contact__address-lines">
+                        Rammandir Street, Temple Road<br>
+                        Vemulawada, Telangana, India
+                    </address>
+                    <!-- The boutique has no official Google Maps listing yet, so this is a
+                         plain Google Maps SEARCH for the address above — never a claimed
+                         listing or pin. When a real listing exists, only the href changes:
+                         swap this search URL for that listing's exact URL. -->
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=NIMMI%20FASHIONS%2C%20Rammandir%20Street%2C%20Temple%20Road%2C%20Vemulawada%2C%20Telangana%2C%20India"
+                       class="btn btn--primary contact__address-cta"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="Find our store — opens a Google Maps search for NIMMI FASHIONS in Vemulawada, Telangana">FIND OUR STORE</a>
+                    <p class="contact__address-note">Call or message us during boutique hours and we will gladly guide you to us.</p>
+                </div>
+                <div class="contact__map reveal" data-delay="260">
+                    <div class="contact__map-placeholder">
+                        <span class="contact__map-pin" aria-hidden="true">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </span>
+                        <p class="contact__map-title">STORE LOCATION</p>
+                        <p class="contact__map-note">Vemulawada, Telangana</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  9. FOOTER                                  -->
+    <!-- ═══════════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <a href="#home" class="footer__logo">
+                    <span class="footer__logo-name">NIMMI</span>
+                    <span class="footer__logo-tagline">FASHIONS</span>
+                </a>
+                <p class="footer__tagline">Timeless Indian Elegance</p>
+            </div>
+            <div class="footer__links">
+                <div class="footer__col">
+                    <h4 class="footer__col-title">NAVIGATION</h4>
+                    <a href="#home" class="footer__link">HOME</a>
+                    <a href="#shop" class="footer__link">SHOP</a>
+                    <a href="#collections" class="footer__link">COLLECTIONS</a>
+                    <a href="#story" class="footer__link">OUR STORY</a>
+                    <a href="#contact" class="footer__link">CONTACT</a>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__col-title">COLLECTIONS</h4>
+                    <a href="#shop" class="footer__link">SAREES</a>
+                    <a href="#shop" class="footer__link">KURTI</a>
+                    <a href="#shop" class="footer__link">HALF SAREES</a>
+                    <a href="#shop" class="footer__link">LEHENGA CHOLI</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 NIMMI FASHIONS. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
